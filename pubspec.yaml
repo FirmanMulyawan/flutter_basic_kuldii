@@ -1,0 +1,54 @@
+name: first_project
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  faker: ^2.0.0
+  intl: ^0.17.0
+  provider: ^6.0.3
+  http: ^0.13.5
+  flutter_dotenv: ^5.0.2
+  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.2.1
+  logger: ^1.1.0
+  dropdown_search: ^5.0.3
+  flutter_login: ^4.0.0
+  shared_preferences: ^2.0.15
+  flutter_bloc: ^7.0.0
+  equatable: ^2.0.0
+  get: ^4.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/image.jpg
+    - images/true.png
+    - images/false.png
+    - .env
+
+  fonts:
+    - family: Stick
+      fonts:
+        - asset: fonts/Stick-Regular.ttf
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: Anton
+      fonts:
+        - asset: assets/fonts/Anton-Regular.ttf
