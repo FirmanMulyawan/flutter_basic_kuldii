@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import './testPage/m_getX/stateManager/controllers/counter_controller.dart';
+import './controllers/orang_controller.dart';
 
 void main(List<String> args) {
   runApp(MyAppX());
@@ -10,7 +10,7 @@ void main(List<String> args) {
 class MyAppX extends StatelessWidget {
   MyAppX({super.key});
 
-  final countC = Get.put(CounterControllerSimple());
+  final orangC = Get.put(OrangController());
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,11 @@ class MyAppX extends StatelessWidget {
         home: Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: GetBuilder<CounterControllerSimple>(
-          // init: CounterControllerSimple(),
-          builder: (controller) => Text(
-            "Angka ${controller.count}",
+        child: Obx(
+          () => Text(
+            // "nama saya ${OrangC.orang.nama}",
+            "nama saya ${orangC.orang.value.nama}",
+
             style: const TextStyle(
               fontSize: 35,
             ),
@@ -29,8 +30,7 @@ class MyAppX extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {
-        // Get.find<CounterControllerSimple>().increment();
-        countC.increment();
+        orangC.changeUpperCase();
       }),
     ));
   }

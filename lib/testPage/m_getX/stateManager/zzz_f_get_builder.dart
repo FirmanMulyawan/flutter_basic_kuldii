@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import './testPage/m_getX/stateManager/controllers/counter_controller.dart';
+import './controllers/counter_controller.dart';
 
 void main(List<String> args) {
   runApp(MyAppX());
