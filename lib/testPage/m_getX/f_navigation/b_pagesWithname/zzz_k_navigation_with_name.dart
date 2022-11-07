@@ -1,12 +1,8 @@
-// ======= navigation
-// 1. push (ditumpuk)
-// 2. push replacement (dibuang)
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'testPage/m_getX/f_navigation/b_pagesWithname/page1.dart';
-import 'testPage/m_getX/f_navigation/b_pagesWithname/routes/page_routes.dart';
+import './page1.dart';
+import './routes/page_routes.dart';
 
 void main(List<String> args) {
   runApp(const MyAppNavigation());

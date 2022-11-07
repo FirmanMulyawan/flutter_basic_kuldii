@@ -8,7 +8,6 @@ class PageDua extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Page Dua'),
-        // leading: Container()
       ),
       body: const Center(
           child: Text('Ini Page dua', style: TextStyle(fontSize: 50))),

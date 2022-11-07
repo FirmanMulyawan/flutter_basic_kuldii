@@ -5,8 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'testPage/m_getX/f_navigation/b_pagesWithname/page1.dart';
-import 'testPage/m_getX/f_navigation/b_pagesWithname/routes/page_routes.dart';
+import './page1.dart';
 
 void main(List<String> args) {
   runApp(const MyAppNavigation());
@@ -17,10 +16,8 @@ class MyAppNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-        home: const PageSatu(),
-        // initialRoute: '/',
-        // unknownRoute: GetPage(name: '/404', page: () => const PageNotFound()),
-        getPages: AppPage.pages);
+    return const GetMaterialApp(
+      home: PageSatu(),
+    );
   }
 }
