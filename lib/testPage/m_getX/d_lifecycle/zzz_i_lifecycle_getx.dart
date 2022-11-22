@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// 06: 55
 void main(List<String> args) {
   runApp(const MyAppLifeCycle());
 }
