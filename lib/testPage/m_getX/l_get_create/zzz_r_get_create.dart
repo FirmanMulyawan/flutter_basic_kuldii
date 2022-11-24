@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import './testPage/m_getX/m_binding/pages/home.dart';
-
-import './testPage/m_getX/m_binding/routes/app_page.dart';
+import './pages/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +12,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: const HomePage(),
-      getPages: AppPages.pages,
+    return const GetMaterialApp(
+      home: HomePage(),
     );
   }
 }
