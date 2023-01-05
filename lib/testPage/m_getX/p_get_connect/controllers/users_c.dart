@@ -15,6 +15,15 @@ class UsersC extends GetxController {
     );
   }
 
+  @override
+  void onInit() {
+    UserProvider().getData().then((value) {
+      print('firman mulyawan ${value.body.runtimeType}');
+      users.add(value.body);
+    });
+    super.onInit();
+  }
+
   void add(String name, String email, String phone) {
     if (name != '' && email != '' && phone != '') {
       if (email.contains("@")) {

@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'routes/route_name.dart';
+import './controllers/counter_controller.dart';
 
 class PageSatu extends StatelessWidget {
-  const PageSatu({super.key});
+  PageSatu({super.key});
+
+  final countC = Get.put(CounterControllerSimple());
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +19,14 @@ class PageSatu extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            GetBuilder<CounterControllerSimple>(
+              builder: (controller) => Text(
+                "Angka ${controller.count}",
+                style: const TextStyle(
+                  fontSize: 35,
+                ),
+              ),
+            ),
             ElevatedButton(
                 onPressed: () {
                   // Get.to(const PageDua());
@@ -26,6 +37,10 @@ class PageSatu extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        // Get.find<CounterControllerSimple>().increment();
+        countC.increment();
+      }),
     );
   }
 }

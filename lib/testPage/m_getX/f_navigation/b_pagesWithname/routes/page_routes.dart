@@ -9,7 +9,7 @@ import '../page5.dart';
 
 class AppPage {
   static final pages = [
-    GetPage(name: RouteName.page_1, page: () => const PageSatu()),
+    GetPage(name: RouteName.page_1, page: () => PageSatu()),
     GetPage(name: RouteName.page_2, page: () => const PageDua()),
     GetPage(name: RouteName.page_3, page: () => const PageTiga()),
     GetPage(name: RouteName.page_4, page: () => const PageEmpat()),

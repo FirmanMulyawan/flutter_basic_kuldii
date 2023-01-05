@@ -14,7 +14,7 @@ class MyAppNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        home: const PageSatu(),
+        home: PageSatu(),
         // initialRoute: '/',
         // unknownRoute: GetPage(name: '/404', page: () => const PageNotFound()),
         getPages: AppPage.pages);

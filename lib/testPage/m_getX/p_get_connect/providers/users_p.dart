@@ -32,4 +32,7 @@ class UserProvider extends GetConnect {
 
     return patch('${url}users/$id.json', body);
   }
+
+  // get data
+  Future<Response> getData() => get('${url}users.json');
 }
