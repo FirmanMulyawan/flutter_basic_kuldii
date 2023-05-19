@@ -1,0 +1,27 @@
+// To generate the chosen structure on an existing project:
+get init
+
+// To create a page:
+// (Pages have controller, view, and binding)
+// Note: you can use any name, ex: `get create page:login`
+// Nota: use this option if the chosen structure was Getx_pattern
+get create page:home
+
+// To create a new controller in a specific folder:
+// Note: you don't need to reference the folder,
+// Getx will search automatically for the home folder
+// and add your controller there.
+get create controller:dialogcontroller on home
+
+// To install a package in your project (dependencies):
+get install camera
+
+// To remove a package from your project:
+get remove http
+
+// To create a new view in a specific folder:
+// Note: you don't need to reference the folder,
+// Getx will automatically search for the home folder
+// and insert your view there.
+get create view:dialogview on home
+
