@@ -17,6 +17,9 @@ dependencies:
   flutter:
     sdk: flutter
   get_storage: ^2.1.1
+  carousel_slider: ^4.2.1
+  lottie: ^2.3.2
+  avatar_glow: ^2.0.2
   flutter_bloc: ^7.0.0
   flutter_dotenv: ^5.0.2
   flutter_login: ^4.0.0
@@ -37,6 +40,8 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/lottie/
+    - images/logo/
     - images/image.jpg
     - images/true.png
     - images/false.png
